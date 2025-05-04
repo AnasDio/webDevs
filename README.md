@@ -1,5 +1,5 @@
 <html>
-  <h1 style="color: green">
+  <h1 style="color: green;">
     Hello, there👋
   </h1>
   <p>in this repo i display my personal projects for web development.</p>
