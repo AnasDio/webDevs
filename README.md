@@ -1,7 +1,7 @@
 <html>
-  <h1 style="color: green;">
+  <h1>
     Hello, there👋
   </h1>
-  <p>in this repo i display my personal projects for web development.</p>
+  <p><strong>in this repo i display my personal projects for web development.</strong></p>
   <p>current projects: <a href="https://github.com/AnasDio/webDevs/tree/master/littleTacoShop">LittleTacoShop</a>, </p>
 </html>
