@@ -1,0 +1,134 @@
+body {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.firstcard {
+  max-width: 25%;
+  display: flex;
+  font-family: cursive;
+  flex-direction: column-reverse;
+}
+fieldset {
+  max-width: fit-content;
+  border: none;
+  display: flex;
+  flex-direction: row;
+}
+.firstcard .test1 {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: medium;
+  line-height: 19px;
+  max-width: 70%;
+  border-radius: 10px;
+}
+fieldset p {
+  margin-left: 30px;
+  background-color: white;
+  color: black;
+}
+.firstpfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 999px;
+}
+.test1::before {
+  content: "";
+  border-width: 15px;
+  border-color: black transparent transparent transparent;
+  border-style: solid;
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  margin-top: 146px;
+  margin-left: 35px;
+}
+.secondCard {
+  padding: 15px;
+  max-width: 20%;
+  border: solid 2px gray;
+  border-radius: 15px;
+}
+.secondCard p {
+  max-width: 90%;
+  font-size: large;
+  font-family: cursive;
+}
+.second {
+  width: 90px;
+  height: 90px;
+  border-radius: 999px;
+}
+.temp2 {
+  display: flex;
+  flex-direction: row;
+}
+.temp2 p {
+  margin-left: 20px;
+}
+.third {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+.three {
+  width: 250px;
+  height: 230px;
+  border-radius: 30px;
+}
+.third3 {
+  background-color: black;
+  color: white;
+  width: 530px;
+  height: 200px;
+  margin-left: 60px;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: cursive;
+}
+.third3 strong {
+  font-size: larger;
+}
+.third3 code {
+  font-family: cursive;
+  font-size: large;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  border: solid 2px gray;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  min-height: 200px;
+  width: 850px;
+  font-size: large;
+  font-family: cursive;
+}
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 999px;
+}
+.notmain {
+  opacity: 50%;
+}
+.main {
+  width: 60px;
+  height: 60px;
+}
