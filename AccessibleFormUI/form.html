@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta author="Anas" />
+    <meta year="2025" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form UI</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <fieldset name="information">
+          <label for="name">Full Name</label>
+          <input type="text" required name="name" placeholder="what should we call you?" id="name" />
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="example@some.com" required name="email" id="email" />
+
+          <label for="password">Enter Password</label>
+          <input
+            type="password"
+            name="password"
+            required
+            id="password"
+            placeholder="xxxxxxxxx"
+          />
+
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            required
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="xxxxxxxxx"
+          />
+
+          <button type="submit">Update Profile</button>
+        </fieldset>
+      </form>
+      <div class="completion">
+        <div class="counter"> 65% </div>
+        <div class="steps">
+          <p class="first">-Enter your Name</p>
+          <p class="second">-Enter your email</p>
+          <p class="third">-enter your password</p>
+          <p class="fourth">-confirm password</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
