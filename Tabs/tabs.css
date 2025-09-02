@@ -1,0 +1,101 @@
+body {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  border: 3px solid black;
+  margin-top: 10%;
+  border-radius: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.activetab {
+  text-decoration: underline;
+  color: black;
+}
+.head {
+  color: rgb(209, 207, 207);
+}
+.head,
+.head p {
+  position: relative;
+  font-size: larger;
+  right: 0;
+  font-family: cursive;
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  justify-content: space-around;
+}
+.head p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+p {
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+}
+div {
+  padding: 15px;
+  margin: 15px;
+  font-size: large;
+  font-family: sans-serif;
+  text-align: center;
+}
+.first {
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 10%;
+  padding: 20px;
+  display: flex;
+  color: black;
+  align-items: center;
+  background-color: aqua;
+  display: none;
+}
+.second {
+  padding: 20px;
+  height: 35%;
+  z-index: 100;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 10%;
+  display: flex;
+  color: white;
+  align-items: center;
+  background-color: red;
+  display: none;
+}
+.third {
+  height: 35%;
+  z-index: 100;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 10%;
+  display: flex;
+  padding: 20px;
+  color: white;
+  align-items: center;
+  background-color: turquoise;
+  display: none;
+}
+.fourth {
+  height: 35%;
+  z-index: 100;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 10%;
+  display: flex;
+  color: white;
+  padding: 20px;
+  align-items: center;
+  background-color: rgb(2, 87, 214);
+  display: none;
+}
+.first p,
+.second p,
+.third p,
+.fourth p {
+  color: black;
+}
