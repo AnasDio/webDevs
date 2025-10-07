@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Anas" />
+    <meta year="2025" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restricted Text Area</title>
+    <style>
+      span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        position: relative;
+        bottom: 17px;
+        right: 70px;
+      }
+      textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 50%;
+        border: solid black 2px;
+        border-radius: 18px;
+        min-height: 12vh;
+        padding: 10px;
+        font-size: 16px;
+      }
+      textarea:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-family: cursive">Write Your Message</h1>
+    <div class="container">
+      <textarea
+        name="message"
+        placeholder="Write Your Message..."
+        id="message"
+      ></textarea>
+      <span>0 / 250</span>
+    </div>
+    <script src="textArea.js"></script>
+  </body>
+</html>
