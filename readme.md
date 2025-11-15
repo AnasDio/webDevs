@@ -11,3 +11,5 @@ This repo contains my progress in the frontend development, and my projects:
 <li><a href="https://roadmap.sh/projects/simple-tabs">Simple Tabs</a></li>
 <li><a href="https://roadmap.sh/projects/cookie-consent">Cookie Consent</a></li>
 <li><a href="https://roadmap.sh/projects/restricted-textarea">Restricted Text Area</a></li>
+<li><a href="https://roadmap.sh/projects/accordion">Accordion</a></li>
+</ul>
