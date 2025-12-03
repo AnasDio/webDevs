@@ -13,4 +13,5 @@ This repo contains my progress in the frontend development, and my projects:
 <li><a href="https://roadmap.sh/projects/restricted-textarea">Restricted Text Area</a></li>
 <li><a href="https://roadmap.sh/projects/accordion">Accordion</a></li>
 <li><a href="https://roadmap.sh/projects/age-calculator">Age Calculator</a></li>
+<li><a href="https://roadmap.sh/projects/flash-cards">Flash Cards</a></li>
 </ul>

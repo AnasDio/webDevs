@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  font-family: cursive;
+  padding: 0;
+}
+button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  &:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: transparent;
+  }
+}
+$dark: hsl(0, 0, 65);
+$light: hsl(0, 0, 92);

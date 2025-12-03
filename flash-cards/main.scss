@@ -1,0 +1,81 @@
+@use "./style/helpers/mixins" as *;
+@use "./style/globals" as *;
+.mainContainer {
+  //   border: thin gray solid;
+  margin: 10% auto;
+  width: 500px;
+  height: 400px;
+}
+.progress {
+  box-sizing: border-box;
+  display: inline-flex;
+  width: 100%;
+  padding: 2px;
+  align-items: center;
+  height: 30px;
+  color: black;
+  position: relative;
+  border-radius: 10px;
+  margin: 12px 0;
+  border: solid 2px $dark;
+  .persentage {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .numberOfCards {
+    position: absolute;
+    right: 1%;
+  }
+  .line {
+    z-index: -1;
+    position: absolute;
+    border-radius: 8px;
+    width: calc(10% - 4px);
+    height: 88%;
+    background-color: $dark;
+  }
+}
+.body {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid $dark;
+  border-radius: 10px;
+  padding: 5px;
+  height: calc(100% - 30px);
+  .cardContainer {
+    font-size: 23px;
+    background-color: white;
+    border-radius: 10px;
+    height: 88%;
+    perspective: 1000px;
+    .card {
+      @extend %cardBody;
+      .front {
+        background-color: $light;
+        @extend %cardFace;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+      .back {
+        @extend %cardFace;
+        transform: rotateY(180deg);
+        background: $light;
+      }
+    }
+  }
+  .actions {
+    display: flex;
+    background-color: $light;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.passive {
+  color: $dark;
+}

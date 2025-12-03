@@ -1,0 +1,116 @@
+.body .cardContainer .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.body .cardContainer .card .front, .body .cardContainer .card .back {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  font-family: cursive;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+button:active {
+  background-color: transparent;
+}
+
+.mainContainer {
+  margin: 10% auto;
+  width: 500px;
+  height: 400px;
+}
+
+.progress {
+  box-sizing: border-box;
+  display: inline-flex;
+  width: 100%;
+  padding: 2px;
+  align-items: center;
+  height: 30px;
+  color: black;
+  position: relative;
+  border-radius: 10px;
+  margin: 12px 0;
+  border: solid 2px hsl(0, 0%, 65%);
+}
+.progress .persentage {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.progress .numberOfCards {
+  position: absolute;
+  right: 1%;
+}
+.progress .line {
+  z-index: -1;
+  position: absolute;
+  border-radius: 8px;
+  width: calc(10% - 4px);
+  height: 88%;
+  background-color: hsl(0, 0%, 65%);
+}
+
+.body {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid hsl(0, 0%, 65%);
+  border-radius: 10px;
+  padding: 5px;
+  height: calc(100% - 30px);
+}
+.body .cardContainer {
+  font-size: 23px;
+  background-color: white;
+  border-radius: 10px;
+  height: 88%;
+  perspective: 1000px;
+}
+.body .cardContainer .card .front {
+  background-color: hsl(0, 0%, 92%);
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.body .cardContainer .card .back {
+  transform: rotateY(180deg);
+  background: hsl(0, 0%, 92%);
+}
+.body .actions {
+  display: flex;
+  background-color: hsl(0, 0%, 92%);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.passive {
+  color: hsl(0, 0%, 65%);
+}/*# sourceMappingURL=main.css.map */
