@@ -1,0 +1,126 @@
+/* Global reset: remove default spacing and set a base box model and font */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: cursive;
+}
+
+/* Page background */
+body {
+  background: #222;
+}
+
+/* Main container for the app:
+   centered, constrained width, padded, rounded with a gradient background */
+.container {
+  max-width: 40%;
+  padding: 40px;
+  margin: 5% auto;
+  background: linear-gradient(90deg, #13d6a2, #7970b4);
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search area: horizontal layout that centers and spaces children */
+.search {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Input field styling: size, padding, rounded border and readable font */
+input {
+  width: 82%;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  border: solid 2px #eee;
+  padding: 20px;
+  font-size: large;
+  outline: none;
+}
+
+/* Input focus state: subtle border color change for accessibility */
+input:focus {
+  border-color: #a7a7a7;
+}
+
+/* Hover state for search icon: pointer and slight scale via font-size */
+.fa-searchengin:hover {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* Circular white background for a search button or icon wrapper */
+.fa-searchengin1 {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* Images inside the layout: keep relative sizing */
+img {
+  width: 50%;
+  height: 50%;
+}
+
+/* Weather text block: center, bold and white for contrast */
+.weatherinfo {
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: white;
+}
+
+/* State row: distribute space between elements (e.g., temp and details) */
+.state {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Elements inside .state: align content vertically */
+.state div {
+  display: flex;
+  align-items: center;
+}
+
+/* Paragraphs in .state: spacing and color */
+.state p {
+  font-size: 1em;
+  color: white;
+  padding: 0 10px;
+}
+
+/* Responsive tweaks:
+   For medium screens, adjust search spacing */
+@media (max-width: 1000px) {
+  .search {
+    justify-content: space-between;
+  }
+}
+
+/* For small screens, make the main container nearly full-width */
+@media (max-width: 990px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/* For very large screens, increase font size for .state */
+@media (min-width: 1100px) {
+  .state {
+    font-size: x-large;
+  }
+}

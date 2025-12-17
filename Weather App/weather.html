@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta author="Anas" />
+    <meta year="2025" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="icon" href="assets/clouds-and-sun-svgrepo-com.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Main container for the weather app -->
+    <div class="container">
+      <!-- Search area: input and search icon -->
+      <div class="search">
+        <input type="text" spellcheck="false" placeholder="Enter city name" />
+        <div class="fa-searchengin1">
+          <i class="fa-brands fa-searchengin fa-xl" style="color: #aaa9a9"></i>
+        </div>
+      </div>
+
+      <img src="assets/cloud-and-rain-svgrepo-com.svg" alt="cool pic" />
+
+      <!-- Main weather information: city and temperature -->
+      <div class="weatherinfo">
+        <h1 class="city">Cairo</h1>
+        <h3 class="degree">25°C</h3>
+      </div>
+
+      <!-- First row of state data: humidity and wind -->
+      <div class="state">
+        <div class="hum">
+          <i class="fa-solid fa-water fa-2xl" style="color: #ffffff"></i>
+          <p>
+            Humidity<br />
+            <strong>20%</strong>
+          </p>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind fa-2xl" style="color: #ffffff"></i>
+          <p>
+            Wind<br />
+            <strong>10</strong> KM/H
+          </p>
+        </div>
+      </div>
+
+      <!-- Second row of state data: clouds and country -->
+      <div class="state">
+        <div class="clouds">
+          <i class="fa-solid fa-cloud-sun fa-2xl" style="color: #ffffff;"></i>
+          <p>
+            Clouds<br />
+            <strong>53</strong>
+          </p>
+        </div>
+        <div class="UV">
+          <i class="fa-solid fa-earth-americas fa-2xl" style="color: #ffffff;"></i>
+          <p>
+            Country<br />
+            <strong>EG</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- App script: handles fetching/updating weather data -->
+    <script src="weather.js"></script>
+  </body>
+</html>

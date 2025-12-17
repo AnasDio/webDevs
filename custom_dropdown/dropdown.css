@@ -1,0 +1,71 @@
+.container {
+  font-family: cursive;
+  display: flex;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10% auto;
+}
+.container .head {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#arrow {
+  width: 34px;
+  height: 26px;
+}
+#arrow:hover {
+  cursor: pointer;
+}
+.container .body {
+  display: flex;
+  margin-top: 15px;
+  border: 2px solid black;
+  flex-direction: column;
+  border-radius: 24px;
+  transform: translateY(-10%);
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.2s ease-in,
+    visibility 0s linear 0.2s;
+}
+.container .body div {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  border-bottom: solid 2px black;
+}
+.container .body div:hover {
+  cursor: pointer;
+}
+.container .body div:nth-last-child(1) {
+  border-bottom: none;
+}
+.container .body.visible {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.8s ease-out, opacity 0.3s ease-in,
+    visibility 0s linear 0s;
+}
+.flip {
+  transform: rotateX(180deg);
+}
+img[src="assets/correct-success-tick-svgrepo-com (1).svg"] {
+  width: 40px;
+  align-self: flex-end;
+  height: 40px;
+}
+.noSelect {
+  visibility: hidden;
+}
